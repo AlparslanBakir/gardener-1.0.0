@@ -1,32 +1,159 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS</title>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.buttont {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 2% 25%;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+.buttont:hover {
+  opacity: 0.8;
+}
+.cancelbtnt:hover{
+  opacity: 0.8;
+}
+/* Extra styles for the cancel button */
+.cancelbtnt {
+  width: auto;
+  color:white;
+  padding: 10px 18px;
+  background-color: #f44336;
+  margin: 2% 0% 0% 0%;
+  border:none;
+}
+
+/* Center the image and position the close button */
+
+.containert {
+  padding: 16px;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0,0.4); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 25%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtnt {
+     width: 100%;
+  }
+}
+</style>
+</head>
 <body>
 
-<div class="w3-container">
-  <h2>W3.CSS Modal</h2>
-  <p>Use w3-container classes to create different sections in the modal (e.g. header & footer).</p>
-  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
+<h2>Modal Login Form</h2>
 
-  <div id="id01" class="w3-modal">
-    <div class="w3-modal-content">
-      <header class="w3-container w3-teal"> 
-        <span onclick="document.getElementById('id01').style.display='none'" 
-        class="w3-button w3-display-topright">&times;</span>
-        <h2>Modal Header</h2>
-      </header>
-      <div class="w3-container">
-        <p>Some text..</p>
-        <p>Some text..</p>
-      </div>
-      <footer class="w3-container w3-teal">
-        <p>Modal Footer</p>
-      </footer>
+<button class="buttont" onclick="document.getElementById('id01x').style.display='block'" style="width:auto;">Yönetici Girişi</button>
+
+<div id="id01x" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+
+    <div class="containert">
+      <label for="uname"><b>Kullanıcı Adı</b></label>
+      <input type="text" placeholder="Kullanıcı adı" name="uname" required>
+
+      <label for="psw"><b>Parola</b></label>
+      <input type="password" placeholder="********" name="psw" required>
+        
+      <button class="buttont" type="submit">Giriş Yap</button>
+      
     </div>
-  </div>
+
+    <div class="containert" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01x').style.display='none'" class="cancelbtnt">İptal</button>
+    </div>
+  </form>
 </div>
-            
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01x');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
 </body>
 </html>

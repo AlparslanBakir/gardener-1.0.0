@@ -24,7 +24,7 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
+    <link href="css/w3.css" rel="stylesheet">
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -134,7 +134,7 @@
                             </div>
                             <h4 class="mb-3">Landscaping</h4>
                             <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <button class="btn btn-sm" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-plus text-primary me-2"></i>Read More</button>
                         </div>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
                             </div>
                             <h4 class="mb-3">Pruning plants</h4>
                             <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <button class="btn btn-sm" onclick="document.getElementById('id02').style.display='block'"><i class="fa fa-plus text-primary me-2"></i>Read More</button>
                         </div>
                     </div>
                 </div>
@@ -164,7 +164,7 @@
                             </div>
                             <h4 class="mb-3">Irrigation & Drainage</h4>
                             <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <button class="btn btn-sm" onclick="document.getElementById('id03').style.display='block'"><i class="fa fa-plus text-primary me-2"></i>Read More</button>
                         </div>
                     </div>
                 </div>
@@ -179,7 +179,7 @@
                             </div>
                             <h4 class="mb-3">Garden Maintenance </h4>
                             <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <button class="btn btn-sm" onclick="document.getElementById('id04').style.display='block'"><i class="fa fa-plus text-primary me-2"></i>Read More</button>
                         </div>
                     </div>
                 </div>
@@ -194,7 +194,7 @@
                             </div>
                             <h4 class="mb-3">Green Technology</h4>
                             <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <button class="btn btn-sm" onclick="document.getElementById('id05').style.display='block'"><i class="fa fa-plus text-primary me-2"></i>Read More</button>
                         </div>
                     </div>
                 </div>
@@ -209,7 +209,7 @@
                             </div>
                             <h4 class="mb-3">Urban Gardening</h4>
                             <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <button class="btn btn-sm" onclick="document.getElementById('id06').style.display='block'"><i class="fa fa-plus text-primary me-2"></i>Read More</button>
                         </div>
                     </div>
                 </div>
@@ -300,6 +300,104 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+          <header class="w3-container w3-teal"> 
+            <span onclick="document.getElementById('id01').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>Modal Header</h2>
+          </header>
+          <div class="w3-container">
+            <p class="p1">Some text..</p>
+            <p>Some text..</p>
+          </div>
+          <footer class="w3-container w3-teal">
+            <p>Modal Footer</p>
+          </footer>
+        </div>
+    </div>
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+          <header class="w3-container w3-teal"> 
+            <span onclick="document.getElementById('id02').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>Modal Header</h2>
+          </header>
+          <div class="w3-container">
+            <p class="p1">Some text..</p>
+            <p>Some text..</p>
+          </div>
+          <footer class="w3-container w3-teal">
+            <p>Modal Footer</p>
+          </footer>
+        </div>
+    </div>
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+          <header class="w3-container w3-teal"> 
+            <span onclick="document.getElementById('id03').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>Modal Header</h2>
+          </header>
+          <div class="w3-container">
+            <p class="p1">Some text..</p>
+            <p>Some text..</p>
+          </div>
+          <footer class="w3-container w3-teal">
+            <p>Modal Footer</p>
+          </footer>
+        </div>
+    </div>
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+          <header class="w3-container w3-teal"> 
+            <span onclick="document.getElementById('id04').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>Modal Header</h2>
+          </header>
+          <div class="w3-container">
+            <p class="p1">Some text..</p>
+            <p>Some text..</p>
+          </div>
+          <footer class="w3-container w3-teal">
+            <p>Modal Footer</p>
+          </footer>
+        </div>
+    </div>
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+          <header class="w3-container w3-teal"> 
+            <span onclick="document.getElementById('id05').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>Modal Header</h2>
+          </header>
+          <div class="w3-container">
+            <p class="p1">Some text..</p>
+            <p>Some text..</p>
+          </div>
+          <footer class="w3-container w3-teal">
+            <p>Modal Footer</p>
+          </footer>
+        </div>
+    </div>
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+          <header class="w3-container w3-teal"> 
+            <span onclick="document.getElementById('id06').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>Modal Header</h2>
+          </header>
+          <div class="w3-container">
+            <p class="p1">Some text..</p>
+            <p>Some text..</p>
+          </div>
+          <footer class="w3-container w3-teal">
+            <p>Modal Footer</p>
+          </footer>
+        </div>
+    </div>
+
 </body>
 
 </html>
