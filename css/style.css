@@ -523,4 +523,16 @@ h6,
 .copyright a:hover {
     color: var(--primary);
 }
-
+.foto1 {
+    
+    height: 500px;
+    margin-left: 170px;
+    width: 500px;
+}
+ .yil {
+    text-align: center;
+ }
+ .div{
+    margin:0 auto 0 auto;
+	display:table;
+ }

@@ -413,8 +413,8 @@
   }
   .display-1 {
     font-size: calc(1.625rem + 4.5vw);
-    font-weight: 1000;
-    line-height: 1.1;
+    font-weight: 700;
+    line-height: 1.2;
     margin-top:-15%
   }
   @media (min-width: 1200px) {
@@ -2535,6 +2535,8 @@
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
       border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
+
+  
   @media (prefers-reduced-motion: reduce) {
     .btn {
       transition: none;
@@ -6622,10 +6624,14 @@
   }
   .py-3 {
     padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
+    padding-bottom: 1.2rem !important;
   }
   .py-4 {
     padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+  .py-6 {
+    padding-top: 1.8rem !important;
     padding-bottom: 1.5rem !important;
   }
   .py-5 {
@@ -6721,6 +6727,7 @@
   }
   .fs-5 {
     font-size: 1.25rem !important;
+    text-align: center;
   }
   .fs-6 {
     font-size: 1rem !important;
