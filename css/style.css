@@ -14,6 +14,8 @@
     z-index: 99;
 }
 
+
+
 h1,
 .h1,
 h2,
@@ -416,6 +418,16 @@ h6,
 .team-item:hover .team-text {
     left: 0;
     opacity: 1;
+}
+
+.team-item .team-social .btn {
+    background: var(--light);
+    color: var(--primary);
+}
+
+.team-item .team-social .btn:hover {
+    background: var(--primary);
+    color: var(--light);
 }
 
 .team-item .team-social .btn {

@@ -1,7 +1,7 @@
 
-  => Proje Canlı Webisitesi : www.cicekk.com.tr
-  => Proje Github Adresi : https://github.com/AlparslanBakir/gardener-1.0.0
+  => Proje Canlı Webisitesi : https://cicekk.com.tr
 
+  => Proje Github Adresi : https://github.com/AlparslanBakir/gardener-1.0.0
 
   =>  Template Name    : Gardener - Gardening Website Template
 
